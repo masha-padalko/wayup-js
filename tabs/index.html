@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4 practice</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Tabs</h1>
+    <div class="tabs-block-wrapper">
+      <div id="tabs" class="tab">
+        <div class="tab-btn active" data-btn="1">1</div>
+        <div class="tab-btn" data-btn="2">2</div>
+        <div class="tab-btn" data-btn="3">3</div>
+      </div>
+      <div id="contents">
+        <div class="div">
+          <div class="content active" data-content="1">content 1</div>
+          <div class="content" data-content="2">content 2</div>
+
+          <div class="content" data-content="3">
+            <div id="tabs-inner" class="tabs tab">
+              <div class="tab-btn active" data-btn="1">1</div>
+              <div class="tab-btn" data-btn="2">2</div>
+            </div>
+
+            <div id="content-inner">
+              <div class="content-inner active" data-content="1">
+                content inner 1
+              </div>
+              <div class="content-inner" data-content="2">content inner 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
